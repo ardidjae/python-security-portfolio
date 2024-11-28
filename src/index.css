@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles personnalisés */
+body {
+  @apply bg-gray-50;
+  font-family: 'Inter', sans-serif;
+}
+
+.card-container {
+  @apply transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl;
+}
+
+.code-snippet {
+  @apply bg-gray-800 text-green-400 rounded-lg p-4 text-sm overflow-x-auto;
+}
+
+.section-title {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600;
+}
+
+/* Animation subtile */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
